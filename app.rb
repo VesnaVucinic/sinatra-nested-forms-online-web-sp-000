@@ -1,5 +1,8 @@
 
 module FormsLab
+  
+  #set :views, Proc.new { File.join(root, "../views/") }
+  
   class App < Sinatra::Base
     get '/' do
       erb :root
